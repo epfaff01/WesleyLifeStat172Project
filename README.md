@@ -80,4 +80,4 @@ Running this script will produce two choropleth maps of Iowa:
 - `clean_cps.R`
 
 ## Acknowledgments 
-I want to thank my Stat 172 Professor, Dr. Lendie Follett as well as my group members Anthony, Jason, and Riley for their large contributions to this project. Additonally, ChatGPT was well utilized in creating the choropleth maps.
+I want to thank my Stat 172 Professor, Dr. Lendie Follett, as well as my group members Anthony, Jason, and Riley for their large contributions to this project. Additionally, ChatGPT was well utilized in creating the choropleth maps.
