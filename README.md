@@ -11,7 +11,7 @@ In this project, we aim to predict two indicators of food insecurity, FSWROUTY, 
 
 FSWROUTY: Worried that food would run out before able to afford more during past year.
 
-FSBAL: Could not afford to eat balanced meals in the past year
+FSBAL: Could not afford to eat balanced meals in the past year.
 
 We are using lasso and ridge regression models to analyze the data and make predictions about food insecurity for different Public Use Microdata Areas (PUMAs). Our goal is to identify target regions to  inform policy decisions and support appropriate resource allocation to increase food security for senior populations.
 
