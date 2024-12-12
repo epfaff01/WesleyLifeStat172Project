@@ -1,4 +1,4 @@
-# Wesley Life Stat 172 Project - Predicting Food Insecurity Among Seniors by PUMA
+# Wesley Life Stat 172 Project - Predicting Food Insecurity Among Iowan Seniors by PUMA
 
 ## Authors
 - Eric Pfaffenbach
