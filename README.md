@@ -33,19 +33,19 @@ CPS: `cps_00006.csv` (found in above files)
 ACS: `spm_pu_2022.sas7bdat` (found on https://www.census.gov/programs-surveys/acs)
 
   The CPS (Current Population Survey) gathers data at the individual level, along with household information, making it useful for predicting food insecurity at the household level. While the CPS does collect food insecurity measures, it only covers a small number of representative counties in Iowa, which is insufficient for Wesley’s expansion decisions. Therefore, we cannot rely solely on CPS data to predict food insecurity among seniors.
-  Note, we are using CPS data from across the entire Midwest, as Iowa only has 3 counties represented, which would severly limit our predictions if we were to use just CPS data from Iowa.
+  Note, we are using CPS data from across the entire Midwest, as Iowa only has 3 counties represented, which would severely limit our predictions if we were to use just CPS data from Iowa.
 
   The Census provides ACS (American Community Survey) Supplemental Poverty Measure data, which, like the CPS, is collected at the individual level with additional household details. Although the ACS does not specifically collect food insecurity measures, it offers a broader range of data across Iowa and includes PUMA-level information. However, due to its lack of data on hunger, the ACS alone is not sufficient to predict senior food insecurity.
 
 ## Cleaning
 
-Our STAT 172 Professor, Dr. Lendie Follett provided much of the code to clean the CPS and ACS datasets. Additionally, we changed a categorical variable to a numeric variable, and created three interaction terms, which can be found in the `clean_cps.R` file.
+Much of the cleaning code for the CPS and ACS datasets was provided by Dr. Lendie Follett, our STAT 172 professor. Our group changed a categorical variable to a numeric variable, made a few other variable tweaks, and created three interaction terms, all of which can be found in the `clean_cps.R` file.
 
 For our models, we used all demographics available in both datasets as our explanatory variables, along with the variables we created. 
 
 ## Methods
 
- In this project, we applied both Ridge and Lasso regression techniques to predict food insecurity outcomes. These methods are useful for handling multicollinearity and overfitting. While both methods showed promise, Ridge regression outperformed Lasso in terms of the AUC value for both predictor variables, indicating better model accuracy and generalizability. As a result, Ridge regression was selected for both final models, as it provided better predictive accuracy in the given context.
+ In this project, we applied both Ridge and Lasso regression techniques to predict food insecurity outcomes. These methods help mitigate multicollinearity and overfitting. While both methods showed promise, Ridge regression outperformed Lasso in terms of the AUC value for both predictor variables, indicating better model accuracy and generalizability. As a result, Ridge regression was selected for both final models, as it provided better predictive accuracy in the given context.
 
 ## Reproduce
 
