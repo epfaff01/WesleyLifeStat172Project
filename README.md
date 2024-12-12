@@ -47,11 +47,16 @@ For our models, we used all demographics available in both datasets as our expla
 
  In this project, we applied both Ridge and Lasso regression techniques to predict food insecurity outcomes. These methods are useful for handling multicollinearity and overfitting. While both methods showed promise, Ridge regression outperformed Lasso in terms of the AUC value for both predictor variables, indicating better model accuracy and generalizability. As a result, Ridge regression was selected for both final models, as it provided better predictive accuracy in the given context.
 
- ### 1. Run `ACS_WROUTY.R`
+## Reproduce
+
+### 1. Run `ACS_WROUTY.R`
 
 The script `ACS_WROUTY.R` is responsible for predicting the **WROUTY** variable. To ensure proper functionality, it sources two other scripts:
 - `ACSCleaning.R`: Prepares and cleans the ACS data.
 - `predict_wrouty.R`: Contains the model to predict the WROUTY variable, which itself sources the `clean_cps.R` script.
+
+Running this script will produce two choropleth maps of Iowa, 'Predicted Proportion of People
+Worried Food Will Run Out Per PUMA' and 'Predicted Number of Seniors Worried Food Will Run Out Per PUMA'.
 
 #### Script Dependencies:
 - `ACSCleaning.R`
@@ -63,6 +68,10 @@ The script `ACS_WROUTY.R` is responsible for predicting the **WROUTY** variable.
 The script `ACS_FSBAL.R` is responsible for predicting the **FSBAL** variable. To ensure proper functionality, it sources two other scripts:
 - `ACSCleaning.R`: Prepares and cleans the ACS data.
 - `predict_FSBAL.R`: Contains the model to predict the FSBAL variable, which itself sources the `clean_cps.R` script.
+
+Running this script will produce two choropleth maps of Iowa, 'Predicted Proportion of People 
+Who Cannot Afford Balanced Meals Per PUMA' and 'Predicted Number of Seniors 
+Who Cannot Afford Balanced Meals Per PUMA'.
 
 #### Script Dependencies:
 - `ACSCleaning.R`
