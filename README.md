@@ -55,25 +55,29 @@ The script `ACS_WROUTY.R` is responsible for predicting the **WROUTY** variable.
 - `ACSCleaning.R`: Prepares and cleans the ACS data.
 - `predict_wrouty.R`: Contains the model to predict the WROUTY variable, which itself sources the `clean_cps.R` script.
 
-Running this script will produce two choropleth maps of Iowa, 'Predicted Proportion of People
-Worried Food Will Run Out Per PUMA' and 'Predicted Number of Seniors Worried Food Will Run Out Per PUMA'.
+Running this script will produce two choropleth maps of Iowa:
+- **Predicted Proportion of People Worried Food Will Run Out Per PUMA**
+- **Predicted Number of Seniors Worried Food Will Run Out Per PUMA**
 
 #### Script Dependencies:
 - `ACSCleaning.R`
 - `predict_wrouty.R`
 - `clean_cps.R`
 
- ### 2. Run `ACS_FSBAL.R`
+### 2. Run `ACS_FSBAL.R`
 
 The script `ACS_FSBAL.R` is responsible for predicting the **FSBAL** variable. To ensure proper functionality, it sources two other scripts:
 - `ACSCleaning.R`: Prepares and cleans the ACS data.
 - `predict_FSBAL.R`: Contains the model to predict the FSBAL variable, which itself sources the `clean_cps.R` script.
 
-Running this script will produce two choropleth maps of Iowa, 'Predicted Proportion of People 
-Who Cannot Afford Balanced Meals Per PUMA' and 'Predicted Number of Seniors 
-Who Cannot Afford Balanced Meals Per PUMA'.
+Running this script will produce two choropleth maps of Iowa:
+- **Predicted Proportion of People Who Cannot Afford Balanced Meals Per PUMA**
+- **Predicted Number of Seniors Who Cannot Afford Balanced Meals Per PUMA**
 
 #### Script Dependencies:
 - `ACSCleaning.R`
 - `predict_FSBAL.R`
 - `clean_cps.R`
+
+## Acknowledgments 
+I want to thank my Stat 172 Professor, Dr. Lendie Follett as well as my group members Anthony, Jason, and Riley for their large contributions to this project. Additonally, ChatGPT was well utilized in creating the choropleth maps.
