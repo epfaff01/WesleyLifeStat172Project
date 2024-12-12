@@ -22,6 +22,11 @@ install.packages(c("tidyverse", "pROC", "glmnet", "lubridate", "sf", "logistf",
 
 We use 2 data sources: one from CPS, one from ACS. These are sourced from publicly available government data.
 
+  CPS: cps_00006.csv , found above
+  ACS: spm_pu_2022.sas7bdat , found on https://www.census.gov/programs-surveys/acs  
+
+  
+
   The CPS (Current Population Survey) gathers data at the individual level, along with household information, making it useful for predicting food insecurity at the household level. While the CPS does collect food insecurity measures, it only covers a small number of representative counties in Iowa, which is insufficient for Wesley’s expansion decisions. Therefore, we cannot rely solely on CPS data to predict food insecurity among seniors.
   Note, we are using CPS data from across the entire Midwest, as Iowa only has 3 counties represented, which would severly limit our predictions if we were to use just CPS data from Iowa.
 
